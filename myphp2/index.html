@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="bootstrap.min.js"></script>
+    <script src="jijia.js"></script>
+    <script src="jQuery.print.js"></script>
+    <script language="javascript">
+       function  dayin(){
+        $("#jj").print();
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <table class="table table-hover" id="food">
+                <thead>
+                    <th>数量</th>
+                    <th>name</th>
+                    <th>单价</th>
+                </thead>
+
+            </table>
+        </div>
+
+        <div class="col-xs-6">
+            <table class="table table-hover">
+                <thead>
+                    <th>结算</th>
+                    <th><input type="button" value="计价" class="btn btn-info" id="jijia">
+                    </th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <table class="table table-hover" id="jj">
+
+            </table>
+
+            <button type="button" class="btn btn-block" onclick="dayin()">打印订单</button>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+</html>
